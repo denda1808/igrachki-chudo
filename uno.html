@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Онлайн магазин, с разнообразие от детски играчки от 0 до 18-годишна възраст!">
+    <meta name="keywords" content="играчки, детски, бебешки, деца">
+    <meta name="author" content="Деница Янева">
+    <title>Начало | Играчки Чудо</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+<header>
+  <div style="background:#fff; padding:10px; border-radius:8px;">
+    <a href="index.html"><img src="logo.png" alt="Играчки чудо" class="logo"></a>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Търси продукт...">
+    <button>Търси</button>
+  </div>
+<div class="cart-box">
+  <a href="cart.html" id="cartLink"><span class="cart-icon">🛒</span> Количка / 0.00лв.</a>
+
+</div>
+
+</header>
+
+<nav class="main-nav">
+  <div class="nav-buttons">
+    <button onclick="location.href='index.html'">Начало</button>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown()">Продукти ▾</button>
+      <div class="dropdown-content" id="productDropdown">
+        <a href="boys.html">Играчки за момчета</a>
+        <a href="girls.html">Играчки за момичета</a>
+        <a href="lego.html">LEGO</a>
+        <a href="baby.html">За бебето и майката</a>
+        <a href="clothes.html">Детски дрехи и обувки</a>
+
+      </div>
+    </div>
+    <button onclick="location.href='promotions.html'">Промоции</button>
+    <button onclick="location.href='forUs.html'">За нас</button>
+    <button onclick="location.href='logIn.html'">Вход / Регистрация</button>
+  </div>
+</nav>
+
+<main class="product-page-full">
+  <div class="left-panel">
+    <img src="uno.png" alt="UNO Карти (оригинал)">
+    <div class="product-description">
+      <h3>Описание</h3>
+      <ul>
+        <li>Класическа семейна игра с карти.</li>
+        <li>Подходяща за 2-10 играча.</li>
+        <li>Бърза, лесна и забавна.</li>
+        <li>Издание с български инструкции.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="right-panel">
+    <h1>Карти за игра Uno No Mercy (Mattel)</h1>
+    <p><strong>Категория:</strong> Книги и ученически</p>
+    <p><strong>Вид:</strong> Игри с карти</p>
+    <p><strong>Марка:</strong> Mattel</p>
+    <p><strong>Код:</strong> UNO001</p>
+    <p class="availability">Ограничена наличност</p>
+    <p class="price-new">19.99 лв. <span class="price-old">24.99 лв.</span></p>
+    <button class="buy-button" data-name="UNO Карти (оригинал)" data-price="19.99">Добави в количката</button>
+
+
+<div class="also-view">
+  <h3>Можете да разгледате също:</h3>
+  <div class="related-products">
+    <div class="related-item">
+    <a href="legomagnifico.html"><img src="legomagnifico.png" alt="LEGO Disney – Замъкът на крал Магнифико"> </a>
+    <p><strong>LEGO Disney – Замъкът на крал Магнифико</strong></p>
+
+    </div>
+    <div class="related-item">
+      <a href="meche100cm.html"><img src="meche.png" alt="Плюшено мече 100 см"></a>
+      <p><strong>Плюшено мече</strong></p>
+    </div>
+    <div class="related-item">
+      <a href="nukrozovachasha.html"><img src="nukrozovachasha.png" alt="NUK Чаша"></a>
+      <p><strong>NUK Чаша</strong></p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+
+
+<footer>
+  <div class="container">
+      <p>&copy; 2025 Играчки Чудо. Всички права запазени.</p>
+    <p>Контакти: denitsa@igrachkichudo.bg | Телефон: 0896728787</p>
+    <div class="social-media">
+      <a href="#">Facebook</a> | <a href="#">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Вход / Регистрация</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div style="background:#fff; padding:10px; border-radius:8px;">
+    <a href="index.html"><img src="logo.png" alt="Играчки чудо" class="logo"></a>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Търси продукт...">
+    <button>Търси</button>
+  </div>
+  <div class="cart-box">
+    <a href="cart.html" id="cartLink"><span class="cart-icon">🛒</span> Количка / 0.00лв.</a>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="nav-buttons">
+    <button onclick="location.href='index.html'">Начало</button>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown()">Продукти ▾</button>
+      <div class="dropdown-content" id="productDropdown">
+        <a href="boys.html">Играчки за момчета</a>
+        <a href="girls.html">Играчки за момичета</a>
+        <a href="lego.html">LEGO</a>
+        <a href="baby.html">За бебето и майката</a>
+        <a href="clothes.html">Детски дрехи и обувки</a>
+
+      </div>
+    </div>
+    <button onclick="location.href='promotions.html'">Промоции</button>
+    <button onclick="location.href='forUs.html'">За нас</button>
+    <button onclick="location.href='logIn.html'">Вход / Регистрация</button>
+  </div>
+</nav>
+
+<div class="main-container">
+  <div class="form-box">
+    <h2>Нов клиент</h2>
+    <h3>Създаване на профил</h3>
+    <p>Създавайки профил, вие ще можете да пазарувате по-бързо, да следите състоянието и историята на поръчките си и да се възползвате от редица бонуси, достъпни само за регистрираните ни потребители.</p>
+
+    <form id="registerForm">
+      <label>Име:
+        <input type="text" required>
+      </label>
+
+      <label>Фамилия:
+        <input type="text" required>
+      </label>
+
+      <label>Телефонен номер:</label>
+      <div class="phone-group">
+        <span>+359</span>
+        <input type="tel" placeholder="8XX XX XXXX" pattern="8[0-9]{2}\s?[0-9]{2}\s?[0-9]{4}" required>
+      </div>
+
+      <label>Имейл адрес:
+        <input type="email" required>
+      </label>
+
+      <label>Парола:
+        <input type="password" id="regPassword" required>
+        <div id="passwordNote" class="note">Паролата трябва да съдържа поне 1 главна буква и 1 цифра.</div>
+      </label>
+
+      <label>Потвърди паролата:
+        <input type="password" id="confirmPassword" required>
+        <div id="passwordMatch" class="note">Паролите не съвпадат</div>
+      </label>
+
+      <label>Адрес:
+        <input type="text">
+      </label>
+
+      <label>Номер на дебитна карта:
+        <input type="text" maxlength="19" placeholder="XXXX XXXX XXXX XXXX">
+      </label>
+
+      <label>Дата на валидност:</label>
+      <div style="display: flex; gap: 5px;">
+        <select required>
+            <option value="">Месец</option>
+            <option>01</option><option>02</option><option>03</option><option>04</option>
+            <option>05</option><option>06</option><option>07</option><option>08</option>
+            <option>09</option><option>10</option><option>11</option><option>12</option>
+        </select>
+        <select required>
+            <option value="">Година</option>
+            <option>2025</option><option>2026</option><option>2027</option><option>2028</option>
+            <option>2029</option><option>2030</option><option>2031</option><option>2032</option>
+            <option>2033</option><option>2034</option><option>2035</option><option>2036</option>
+        </select>
+      </div>
+
+      <label>CVC:
+        <input type="text" maxlength="3" pattern="\d{3}" placeholder="000" required>
+      </label>
+
+      <button type="submit">ПРОДЪЛЖИ</button>
+    </form>
+  </div>
+
+  <div class="form-box">
+    <h2>Вход</h2>
+    <h3>Вече имате акаунт? Въведете вашите данни:</h3>
+
+    <form id="loginForm" action="loggedIn.html" method="get">
+      <label>Email адрес:
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Парола:
+        <input type="password" name="password" required>
+      </label>
+
+      <a href="#">Забравена парола?</a>
+
+      <button type="submit">ВХОД</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Играчки Чудо. Всички права запазени.</p>
+    <p>Контакти: denitsa@igrachkichudo.bg | Телефон: 0896728787</p>
+    <div class="social-media">
+      <a href="#">Facebook</a> | <a href="#">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const regPassword = document.getElementById("regPassword");
+  const confirmPassword = document.getElementById("confirmPassword");
+  const passwordNote = document.getElementById("passwordNote");
+  const passwordMatch = document.getElementById("passwordMatch");
+
+  regPassword.addEventListener("input", () => {
+    const value = regPassword.value;
+    const hasUpper = /[A-Z]/.test(value);
+    const hasDigit = /[0-9]/.test(value);
+
+    passwordNote.style.color = hasUpper && hasDigit ? "green" : "#d32f2f";
+    checkPasswordMatch();
+  });
+
+  confirmPassword.addEventListener("input", () => {
+    checkPasswordMatch();
+  });
+
+  function checkPasswordMatch() {
+    passwordMatch.style.display =
+      confirmPassword.value.length > 0 && confirmPassword.value !== regPassword.value
+        ? "block"
+        : "none";
+  }
+
+    function toggleDropdown() {
+    const dropdown = document.getElementById("productDropdown");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>

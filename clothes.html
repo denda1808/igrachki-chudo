@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Онлайн магазин, с разнообразие от детски играчки от 0 до 18-годишна възраст!">
+    <meta name="keywords" content="играчки, детски, бебешки, деца">
+    <meta name="author" content="Деница Янева">
+    <title>Детски дрехи | Играчки Чудо</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+
+</head>
+<body>
+
+<header>
+  <div style="background:#fff; padding:10px; border-radius:8px;">
+    <a href="index.html"><img src="logo.png" alt="Играчки чудо" class="logo"></a>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Търси продукт...">
+    <button>Търси</button>
+  </div>
+<div class="cart-box">
+  <a href="cart.html" id="cartLink"><span class="cart-icon">🛒</span> Количка / 0.00лв.</a>
+
+</div>
+
+</header>
+
+<nav class="main-nav">
+  <div class="nav-buttons">
+    <button onclick="location.href='index.html'">Начало</button>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown()">Продукти ▾</button>
+      <div class="dropdown-content" id="productDropdown">
+        <a href="boys.html">Играчки за момчета</a>
+        <a href="girls.html">Играчки за момичета</a>
+        <a href="lego.html">LEGO</a>
+        <a href="baby.html">За бебето и майката</a>
+        <a href="clothes.html">Детски дрехи и обувки</a>
+
+      </div>
+    </div>
+    <button onclick="location.href='promotions.html'">Промоции</button>
+    <button onclick="location.href='forUs.html'">За нас</button>
+    <button onclick="location.href='logIn.html'">Вход / Регистрация</button>
+  </div>
+</nav>
+
+<h1>Детски дрехи за момичета | Детски дрехи за момчета</h1>
+
+<section class="products">
+
+  <div class="product">
+    <a href="drehi1.html"><img src="drehi1.png" alt="Рокля"> </a>
+    <h3>Рокля без ръкав с коланче</h3>
+    <p class="price">70.90 лв.</p>
+    <button>Купи</button>
+  </div>
+
+
+    <div class="product">
+    <a href="drehi2.html"><img src="drehi2.png" alt="Uno"> </a>
+    <h3>Трикотажен спортен панталон</h3>
+    <p class="price">41.90 лв.</p>
+    <button>Купи</button>
+  </div>
+
+
+</section>
+
+
+<footer>
+  <div class="container">
+      <p>&copy; 2025 Играчки Чудо. Всички права запазени.</p>
+    <p>Контакти: denitsa@igrachkichudo.bg | Телефон: 0896728787</p>
+    <div class="social-media">
+      <a href="#">Facebook</a> | <a href="#">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

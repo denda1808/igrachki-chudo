@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LEGO Disney - Замъкът на крал Магнифико от филма Желание.">
+  <meta name="keywords" content="LEGO, Disney, Магнифико, замък, конструктор, играчки">
+  <meta name="author" content="Деница Янева">
+  <title>Магнифико | Играчки Чудо</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div style="background:#fff; padding:10px; border-radius:8px;">
+    <a href="index.html"><img src="logo.png" alt="Играчки чудо" class="logo"></a>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Търси продукт...">
+    <button>Търси</button>
+  </div>
+  <div class="cart-box">
+    <a href="cart.html" id="cartLink"><span class="cart-icon">🛒</span> Количка / 0.00лв.</a>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="nav-buttons">
+    <button onclick="location.href='index.html'">Начало</button>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown()">Продукти ▾</button>
+      <div class="dropdown-content" id="productDropdown">
+        <a href="boys.html">Играчки за момчета</a>
+        <a href="girls.html">Играчки за момичета</a>
+        <a href="lego.html">LEGO</a>
+        <a href="baby.html">За бебето и майката</a>
+        <a href="clothes.html">Детски дрехи и обувки</a>
+
+      </div>
+    </div>
+    <button onclick="location.href='promotions.html'">Промоции</button>
+    <button onclick="location.href='forUs.html'">За нас</button>
+    <button onclick="location.href='logIn.html'">Вход / Регистрация</button>
+  </div>
+</nav>
+
+<main class="product-page-full">
+  <div class="left-panel">
+    <img src="legomagnifico.png" alt="LEGO Disney Замъкът на крал Магнифико">
+    <div class="product-description">
+      <h3>Описание</h3>
+      <p style="text-align: justify;">Какво ще намерите, когато изследвате замъка Розас с Аша? Детайлният комплект LEGO® Disney, базиран на филма Желание, ви позволява да изследвате вътрешността. Хапнете торта с Далия в кухнята, посетете лабораторията и открийте мистерии със Звезда, Аша и крал Магнифико.</p>
+      <ul style="text-align: justify;">
+        <li>Съдържа 613 елемента.</li>
+        <li>Подходящ за възраст 7+.</li>
+        <li>Включва минифигури на Аша, Далия, крал Магнифико и Звезда.</li>
+        <li>Модел с 4 етажа, включващ кухня, лаборатория, килер и пирамиден покрив.</li>
+        <li>Съвместим с други комплекти от серията (43223 и 43231).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <h1>LEGO Disney – Замъкът на крал Магнифико</h1>
+    <p><strong>Категория:</strong> LEGO</p>
+    <p><strong>Вид:</strong> Конструктори</p>
+    <p><strong>Марка:</strong> LEGO</p>
+    <p><strong>Код:</strong> 43224</p>
+    <p class="availability">Ограничена наличност</p>
+    <p class="price-new">209.90 лв. <span class="price-old">251.88 лв.</span></p>
+    <button class="buy-button" data-name="LEGO Disney – Замъкът на крал Магнифико" data-price="209.90">Добави в количката</button>
+
+    <div class="also-view">
+  <h3>Можете да разгледате също:</h3>
+  <div class="related-products">
+      <div class="related-item">
+      <a href="nukrozovachasha.html"><img src="nukrozovachasha.png" alt="NUK Чаша"></a>
+      <p>NUK Чаша</p>
+      </div>
+    <div class="related-item">
+      <a href="uno.html"><img src="uno.png" alt="UNO Карти"></a>
+      <p>UNO Карти</p>
+    </div>
+    <div class="related-item">
+      <a href="meche100cm.html"><img src="meche.png" alt="Плюшено мече 100 см"></a>
+      <p>Плюшено мече</p>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Играчки Чудо. Всички права запазени.</p>
+    <p>Контакти: denitsa@igrachkichudo.bg | Телефон: 0896728787</p>
+    <div class="social-media">
+      <a href="#">Facebook</a> | <a href="#">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
