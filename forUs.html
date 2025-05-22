@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Онлайн магазин, с разнообразие от детски играчки от 0 до 18-годишна възраст!">
+    <meta name="keywords" content="играчки, детски, бебешки, деца">
+    <meta name="author" content="Деница Янева">
+    <title>За нас | Играчки Чудо</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+
+</head>
+<body>
+
+<header>
+  <div style="background:#fff; padding:10px; border-radius:8px;">
+    <a href="index.html"><img src="logo.png" alt="Играчки чудо" class="logo"></a>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Търси продукт...">
+    <button>Търси</button>
+  </div>
+<div class="cart-box">
+  <a href="cart.html" id="cartLink"><span class="cart-icon">🛒</span> Количка / 0.00лв.</a>
+
+</div>
+
+</header>
+
+<nav class="main-nav">
+  <div class="nav-buttons">
+    <button onclick="location.href='index.html'">Начало</button>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown()">Продукти ▾</button>
+      <div class="dropdown-content" id="productDropdown">
+        <a href="boys.html">Играчки за момчета</a>
+        <a href="girls.html">Играчки за момичета</a>
+        <a href="lego.html">LEGO</a>
+        <a href="baby.html">За бебето и майката</a>
+        <a href="clothes.html">Детски дрехи и обувки</a>
+
+      </div>
+    </div>
+    <button onclick="location.href='promotions.html'">Промоции</button>
+    <button onclick="location.href='forUs.html'">За нас</button>
+    <button onclick="location.href='logIn.html'">Вход / Регистрация</button>
+  </div>
+</nav>
+
+<section class="about-us" style="padding: 60px;">
+  <h1>За нас</h1>
+  <p style="font-size: 18px; line-height: 1.6;">
+    Онлайн магазин "Играчки Чудо" предлага богато разнообразие от детски и бебешки играчки, образователни материали и продукти за майката и детето. 
+    Нашата мисия е да доставяме усмивки и забавление за малките ни клиенти, като същевременно гарантираме качество, безопасност и обслужване на високо ниво.
+    Работим с водещи световни марки и внимателно подбираме всеки продукт в каталога ни, за да отговаря на нуждите на децата от 0 до 18 години.
+  </p>
+  <p style="font-size: 18px; line-height: 1.6;">
+    <strong>Онлайн магазинът е с учебна цел и не съществува, затова и нямаме история! :)</strong>
+  </p>
+</section>
+
+<section class="slider">
+  <a href="lego.html" class="active"><img src="banner1.png" alt="Банер 1"></a>
+  <a href="lego.html"><img src="banner2.png" alt="Банер 2"></a>
+  <a href="promotions.html"><img src="banner3.png" alt="Банер 3"></a>
+  <a href="promotions.html"><img src="banner4.png" alt="Банер 4"></a>
+  <a href="promotions.html"><img src="banner5.png" alt="Банер 5"></a>
+  <a href="promotions.html"><img src="banner6.png" alt="Банер 6"></a>
+  <button class="prev" onclick="prevSlide()">&#10094;</button>
+  <button class="next" onclick="nextSlide()">&#10095;</button>
+</section>
+
+<h1>Нови продукти</h1>
+
+<section class="products">
+  <div class="product">
+    <a href="meche100cm.html"><img src="meche.png" alt="Мече"> </a>
+    <h3>Плюшена играчка мече – 100см</h3>
+    <p class="price">59.99 лв.</p>
+    <button>Купи</button>  
+  </div>
+
+  <div class="product">
+    <a href="kolichkamuuvo.html"><img src="kolichkamuuvo.png" alt="Количка Muuvo"> </a>
+    <h3>Бебешка количка 2в1 Quick BOHO</h3>
+    <p class="price">1889.99 лв.</p>
+    <button>Купи</button>
+  </div>
+
+  <div class="product">
+    <a href="uno.html"><img src="uno.png" alt="Uno"> </a>
+    <h3>Карти за игра Uno No Mercy</h3>
+    <p class="price">19.99 лв.</p>
+    <button>Купи</button>
+  </div>
+
+  <div class="product">
+    <a href="nukrozovachasha.html"><img src="nukrozovachasha.png" alt="Неразливаща се чаша със сламка Nuk Evolution Action Cup, 230мл, розова, 12м+"> </a>
+    <h3>Неразливаща се чаша със сламка Nuk Evolution Action Cup, 230мл, розова, 12м+</h3>
+    <p class="price">15.60 лв.</p>
+    <button>Купи</button>
+  </div>
+
+</section>
+
+
+
+<footer>
+  <div class="container">
+      <p>&copy; 2025 Играчки Чудо. Всички права запазени.</p>
+    <p>Контакти: denitsa@igrachkichudo.bg | Телефон: 0896728787</p>
+    <div class="social-media">
+      <a href="#">Facebook</a> | <a href="#">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
